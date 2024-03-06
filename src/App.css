@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#aside{
+
+  width: 300px;
+  flex-grow: 1;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  flex-direction: column;
+  background-color: #616161;
+  grid-area: 1 / 1 / 6 / 2;
+  transition: linear all .2s;
+}
+
+#aside.dark{
+
+  background-color: #383838;
+}
+
+#photo{
+
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#aside p{
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: white;
+}
+
+#aside a{
+  margin-top: 50px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+#aside.dark > *{
+  color: wheat;
+}
+
+hr{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+#toggle_night_mode{
+
+  position: absolute;
+  right: 50px;
+  top: 25px;
+  align-self: center;
+  width: 60px;
+  height: 10px;
+  background-color: white;
+  box-shadow: 0px -1px 5px inset #838383;
+  border-radius: 2px;
+
+}
+
+#toggle{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  border-radius: 50%;
+  background-image: url("/sun-day-weather-symbol_icon-icons.com_73146.png");
+  background-position: center;
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+  box-shadow: 5px 7px 20px #616161;
+  transition: all linear 0.3s;
+  
+}
+
+#toggle.dark{
+  background-color: #383838;
+  background-image: url("/dark_clear_mode_night_crescent_moon_icon_220110.png");
+  background-position: center;
+  background-size: contain;
+}
+
+#toggle.dark{
+
+  left: 30px;
+}
+
+#name {
+
+  width: 700px;
+  margin-top: 25px;
+  position: relative;
+  display: flex;
+  grid-area: 1 / 2 / 2 / 3;
+  transition: linear all .2s;
+  
+}
+
+#name.dark{
+
+  background-color: rgb(35 39 47);
+}
+
+#user{
+
+  display: flex;
+  flex-flow: column;
+  
+}
+
+#my_data{
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  gap: 25px;
+}
+
+#my_data img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#my_data.dark > *{
+  color: wheat;
+}
+
+#my_data a{
+  margin-top: 25px;
+  display: flex;
+  color: #616161;
+  text-decoration: none;
+}
+
+#user p{
+
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #616161;
+  transition: linear all .2s;
+}
+
+#user p.dark{
+  color: wheat;
+}
+
+small{
+  font-size: 15px;
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #616161;
+}
+
+#info{
+
+  grid-area: 2 / 2 / 6 / 3;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  
+}
+
+#info.dark{
+  background-color: rgb(35 39 47);
+}
+
+#info.dark > *{
+  color: wheat;
+}
+
+#info p{
+
+  margin-top: 15px;
+  margin-left: 25px;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #616161;
+  font-weight: 300;
+}
+
+h2{
+
+  margin-left: 25px;
+  color: #616161;
+}
